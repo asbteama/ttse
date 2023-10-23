@@ -30,7 +30,7 @@ export default function VolumeSelector({ defaultValue, onChange }: VolumeSelecto
       <div className="grid gap-2">
         <div className="flex items-center justify-between">
           <Label htmlFor="volume" className="text-base">
-            音量（%）
+            volume（%）
           </Label>
           <Input
             disabled
@@ -51,7 +51,7 @@ export default function VolumeSelector({ defaultValue, onChange }: VolumeSelecto
           step={1}
           onValueChange={handleValueChange}
           className="[&_[role=slider]]:h-4 [&_[role=slider]]:w-4"
-          aria-label="音量"
+          aria-label="volume"
         />
       </div>
     </>
