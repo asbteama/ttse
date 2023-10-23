@@ -30,7 +30,7 @@ export default function PitchSelector({ defaultValue, onChange }: PitchSelectorP
       <div className="grid gap-2 hidden">
         <div className="flex items-center justify-between">
           <Label htmlFor="Pitch" className="text-base">
-            音高（Hz）
+            pitch（Hz）
           </Label>
           <Input
             disabled
@@ -52,7 +52,7 @@ export default function PitchSelector({ defaultValue, onChange }: PitchSelectorP
           step={1}
           onValueChange={handleValueChange}
           className="[&_[role=slider]]:h-4 [&_[role=slider]]:w-4"
-          aria-label="音高"
+          aria-label="pitch"
         />
       </div>
     </>
