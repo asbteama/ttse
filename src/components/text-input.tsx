@@ -32,20 +32,20 @@ export default function TextInput({
     <>
       <Tabs defaultValue="textOnline" className={className}>
         <TabsList>
-          <TabsTrigger value="textOnline">在线输入</TabsTrigger>
+          <TabsTrigger value="textOnline">Enter your text</TabsTrigger>
           <TabsTrigger value="textImport" disabled>
-            文本导入
+            Text Import
           </TabsTrigger>
         </TabsList>
         <TabsContent value="textOnline">
           <div className="flex flex-col h-full">
             <p className="text-sm text-gray-600 mb-2">
-              本次最多可输入 {maxTextLength} 文本，剩余 {remainTextsNumber} 文本可输入。
+              This time, you can enter up to {maxTextLength} text，Remaining {remainTextsNumber} text can be entered.
             </p>
             <Textarea
               rows={22}
               maxLength={maxTextLength}
-              placeholder="请输入需要转语音的文本"
+              placeholder="Please enter the text"
               value={text}
               onChange={handleTextChange}
             />
