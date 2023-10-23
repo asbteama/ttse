@@ -30,7 +30,7 @@ export default function RateSelector({ defaultValue, onChange }: RateSelectorPro
       <div className="grid gap-2">
         <div className="flex items-center justify-between">
           <Label htmlFor="Rate" className="text-base">
-            语速（%）
+            speed（%）
           </Label>
           <Input
             disabled
@@ -51,7 +51,7 @@ export default function RateSelector({ defaultValue, onChange }: RateSelectorPro
           step={1}
           onValueChange={handleValueChange}
           className="[&_[role=slider]]:h-4 [&_[role=slider]]:w-4"
-          aria-label="语速"
+          aria-label="speed"
         />
       </div>
     </>
