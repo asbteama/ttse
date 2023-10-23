@@ -59,7 +59,7 @@ export default function VoicesList({ onChange }: VoicesListProps) {
       <div className="flex flex-col gap-3">
         <div className="flex flex-row justify-between items-center">
           <Label htmlFor="voicesList" className="text-base h-6">
-            语音列表
+            Voice list
           </Label>
           <div className="flex flex-row gap-2">
             <div
@@ -70,7 +70,7 @@ export default function VoicesList({ onChange }: VoicesListProps) {
                   : "text-gray-900 bg-gray-200 hover:bg-gray-300/80"
               } text-[13px] leading-[18px] py-[3px] px-[6px] rounded-md cursor-pointer`}
             >
-              男性
+              Male
             </div>
             <div
               onClick={() => setSelectedGender("Female")}
@@ -80,7 +80,7 @@ export default function VoicesList({ onChange }: VoicesListProps) {
                   : "text-gray-900 bg-gray-200 hover:bg-gray-300/80"
               } text-[13px] leading-[18px] py-[3px] px-[6px] rounded-md cursor-pointer`}
             >
-              女性
+              Female
             </div>
           </div>
         </div>
