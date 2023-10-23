@@ -10,7 +10,6 @@ app = FastAPI()
 origins = [
     "http://localhost:5173",
     "https://*.vercel.app",
-    "https://*.yikzero.com",
 ]
 
 app.add_middleware(
@@ -65,52 +64,52 @@ async def listVoices():
     return {
         "listVoices": [
             {
-                "Name": "zh-CN-YunjianNeural",
+                "Name": "en-US-EricNeural",
                 "Gender": "Male",
-                "Description": "体育解说风格",
-                "ShortName": "云健"
+                "Description": "En-US Eric",
+                "ShortName": "Eric"
             },
             {
-                "Name": "zh-CN-YunxiNeural",
+                "Name": "en-US-ChristopherNeural",
                 "Gender": "Male",
-                "Description": "轻松叙述 聊天",
-                "ShortName": "云希"
+                "Description": "En-US Christopher",
+                "ShortName": "Christopher"
             },
             {
-                "Name": "zh-CN-YunxiaNeural",
+                "Name": "en-US-GuyNeural",
                 "Gender": "Male",
-                "Description": "情感比较丰富",
-                "ShortName": "云夏"
+                "Description": "En-US Guy",
+                "ShortName": "Guy"
             },
             {
-                "Name": "zh-CN-YunyangNeural",
+                "Name": "en-GB-RyanNeural",
                 "Gender": "Male",
-                "Description": "专业性较强",
-                "ShortName": "云扬"
+                "Description": "En-GB Ryan",
+                "ShortName": "Ryan"
             },
             {
-                "Name": "zh-CN-XiaoxiaoNeural",
+                "Name": "en-US-JennyNeural",
                 "Gender": "Female",
-                "Description": "暂无数据",
-                "ShortName": "晓晓"
+                "Description": "En-US Jenny",
+                "ShortName": "Jenny"
             },
             {
-                "Name": "zh-CN-XiaoyiNeural",
+                "Name": "en-US-MichelleNeural",
                 "Gender": "Female",
-                "Description": "暂无数据",
-                "ShortName": "晓伊"
+                "Description": "En-US Michelle",
+                "ShortName": "Michelle"
             },
             {
-                "Name": "zh-CN-liaoning-XiaobeiNeural",
+                "Name": "en-US-AnaNeural",
                 "Gender": "Female",
-                "Description": "辽宁口音 亲切",
-                "ShortName": "辽宁晓蓓"
+                "Description": "En-US Ana",
+                "ShortName": "Ana"
             },
             {
-                "Name": "zh-CN-shaanxi-XiaoniNeural",
+                "Name": "en-GB-SoniaNeural",
                 "Gender": "Female",
-                "Description": "山西口音",
-                "ShortName": "陕西晓妮"
+                "Description": "En-GB Sonia",
+                "ShortName": "Sonia"
             }
         ]
     }
