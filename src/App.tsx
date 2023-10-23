@@ -108,18 +108,18 @@ export default function App() {
                       {isGenerating ? (
                         <>
                           <Loader2 className="mr-1 h-4 w-4 animate-spin" />
-                          <span className="w-16">生成中...</span>
+                          <span className="w-16">Generating...</span>
                         </>
                       ) : (
                         <>
                           <Speech className="mr-1 h-4 w-4" />
-                          <span className="w-16">开始转化</span>
+                          <span className="w-16">Start converting</span>
                         </>
                       )}
                     </Button>
                   </HoverCardTrigger>
                   <HoverCardContent className="text-sm text-gray-700 p-3">
-                    调整配置信息后需再次点击按钮生成语音。
+                    After adjusting the configuration information you need to click the button again to generate the voice.
                   </HoverCardContent>
                 </HoverCard>
                 <Button
@@ -128,10 +128,10 @@ export default function App() {
                   onClick={downloadAudio}
                   disabled={isGenerating || !audioUrl}
                 >
-                  下载音频
+                  Download Audio
                 </Button>
                 <Button className="w-full" variant="secondary" disabled>
-                  下载字幕
+                  Download subtitles
                 </Button>
               </div>
             </div>
